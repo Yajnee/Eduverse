@@ -1,0 +1,12 @@
+transformers>=4.35.0
+datasets
+peft>=0.4.0
+accelerate
+torch>=2.1.0
+sentence-transformers
+faiss-cpu
+pdfplumber
+tqdm
+tokenizers
+sacremoses
+numpy

@@ -1,0 +1,191 @@
+/* =======================================================================
+   Result.css — EduVerse vIMMORTAL-PRO
+   Premium Glass UI | Gradient Header | Clean Layout
+   ======================================================================= */
+
+.result-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(145deg, #6a11cb, #3b48ff);
+  color: #111827;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------------- HEADER ---------------- */
+.res-header {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  padding: 25px 32px;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.res-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.muted {
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* ---------------- SCORE PILL ---------------- */
+.score-pill {
+  text-align: right;
+  border-radius: 16px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
+}
+
+.score-pill.neutral {
+  background: #d1d5db;
+  color: #111;
+}
+
+.score-value {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.score-label {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ---------------- MAIN CARD CONTAINER ---------------- */
+.res-main {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 32px;
+}
+
+/* ---------------- CARD ---------------- */
+.res-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  padding: 28px 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+  margin-bottom: 25px;
+}
+
+.res-card h2 {
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ---------------- SUMMARY GRID ---------------- */
+.summary-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.summary-grid small {
+  color: #64748b;
+}
+
+/* ---------------- REVIEW ITEMS ---------------- */
+.review-list {
+  padding-left: 20px;
+}
+
+.review-item {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.q-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.q-topic {
+  background: #eef2ff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #4f46e5;
+}
+
+.q-meta {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.chip {
+  background: #f3f4f6;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.q-feedback {
+  background: #faf5ff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ---------------- ACTION BUTTONS ---------------- */
+.res-actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.res-btn {
+  padding: 12px 20px;
+  background: white;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.res-btn:hover {
+  background: #4f46e5;
+  color: white;
+}
+
+.res-btn.primary {
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+  border: none;
+  box-shadow: 0 10px 24px rgba(79, 70, 229, 0.38);
+}
+
+.res-btn.primary:hover {
+  transform: translateY(-3px);
+}
+
+.res-btn.small {
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+.res-btn.secondary {
+  background: #f3f4f6;
+  border: none;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "eduverse-backend",
+  "version": "1.0.0",
+  "main": "server.cjs",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "nodemon server.cjs"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-fileupload": "^1.5.2",
+    "express-rate-limit": "^8.2.1",
+    "firebase-admin": "^13.6.0",
+    "fs-extra": "^11.3.2",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7",
+    "pdfjs-dist": "^5.4.394"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

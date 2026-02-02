@@ -1,0 +1,250 @@
+/* ============================================================================
+   ErrorAnalysis.css — EduVerse vSUPERNOVA-FINAL-R10
+   Modern | Clean | Matching Result UI | Perfect Grid | No Overflow Bugs
+   ========================================================================== */
+
+:root {
+  --ev-primary: #4f46e5;
+  --ev-primary-dark: #4338ca;
+  --ev-bg-light: #f6f7fb;
+  --ev-text-dark: #1e1e2d;
+  --ev-text-muted: #6b7280;
+  --ev-card-bg: #ffffff;
+  --ev-radius: 16px;
+}
+
+/* Wrapper */
+.ea-wrapper {
+  width: 100%;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.ea-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.ea-header h1 {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--ev-text-dark);
+}
+
+.ea-sub {
+  font-size: 15px;
+  color: var(--ev-text-muted);
+}
+
+/* Card Base */
+.ea-card {
+  background: var(--ev-card-bg);
+  border-radius: var(--ev-radius);
+  padding: 28px 30px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  margin-bottom: 28px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.ea-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--ev-text-dark);
+}
+
+/* Muted text */
+.ea-muted {
+  font-size: 14px;
+  color: var(--ev-text-muted);
+}
+
+/* ================================
+   SUMMARY GRID
+   ================================ */
+.ea-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 18px;
+}
+
+.ea-summary-item {
+  background: #f3f4f8;
+  padding: 14px 16px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.ea-summary-item small {
+  color: var(--ev-text-muted);
+  font-size: 13px;
+}
+
+.ea-summary-item div {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 6px;
+  color: var(--ev-text-dark);
+}
+
+/* ================================
+   TOPIC ACCURACY GRID
+   ================================ */
+.ea-topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.ea-topic-item {
+  background: #f8f9ff;
+  border-left: 5px solid var(--ev-primary);
+  padding: 16px 18px;
+  border-radius: 12px;
+}
+
+.ea-topic-item strong {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--ev-primary-dark);
+}
+
+.ea-topic-acc {
+  margin-top: 5px;
+  font-size: 15px;
+  color: var(--ev-text-dark);
+}
+
+.ea-topic-detail {
+  font-size: 14px;
+  margin-top: 4px;
+  color: var(--ev-text-muted);
+}
+
+/* ================================
+   QUESTION LIST
+   ================================ */
+.ea-q-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ea-q-item {
+  background: #fdfdff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  border: 1px solid #e6e7f0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.ea-q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ea-q-header strong {
+  font-size: 17px;
+  color: var(--ev-primary);
+}
+
+.ea-q-topic {
+  background: var(--ev-primary);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.ea-q-text {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ev-text-dark);
+}
+
+/* Chips (Your / Expected) */
+.ea-q-meta {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ea-chip {
+  background: #eef0ff;
+  color: var(--ev-primary-dark);
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Analysis paragraph */
+.ea-q-analysis {
+  margin-top: 12px;
+  background: #fff8f0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 14px;
+  border-left: 4px solid #ff9800;
+  color: #5d3d00;
+}
+
+/* ================================
+   ACTION BUTTONS
+   ================================ */
+.ea-actions {
+  margin-top: 35px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ea-btn {
+  background: var(--ev-primary);
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.ea-btn:hover {
+  background: var(--ev-primary-dark);
+  transform: translateY(-3px);
+}
+
+.ea-btn:active {
+  transform: scale(0.96);
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+@media (max-width: 768px) {
+  .ea-wrapper {
+    padding: 20px 15px;
+  }
+
+  .ea-card {
+    padding: 22px 20px;
+  }
+
+  .ea-header h1 {
+    font-size: 28px;
+  }
+}

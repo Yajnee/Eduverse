@@ -1,0 +1,91 @@
+/* ============================================================================
+   EduVerse — SubjectSelection UI (vAURA-FUSION R2)
+   - Matches Login/Register Theme
+   - White Cards + Purple Accent + Soft Shadows
+   ========================================================================== */
+
+/* Main container */
+.subject-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Title */
+.subject-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+/* Grid layout */
+.subject-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+/* Subject card */
+.subject-card {
+  width: 240px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+
+  cursor: pointer;
+  border: 1px solid #e7e7ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+  transition: 0.22s ease;
+}
+
+/* Hover animation */
+.subject-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 12px 26px rgba(0, 0, 0, 0.18);
+  border-color: #a48bff;
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Active press */
+.subject-card:active {
+  transform: scale(0.97);
+}
+
+/* Subject short name */
+.subject-card h3 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #5a41de;
+  letter-spacing: 0.5px;
+}
+
+/* Subject full name */
+.subject-card p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+  opacity: 0.9;
+  max-width: 90%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .subject-card {
+    width: 180px;
+    padding: 16px;
+  }
+
+  .subject-card h3 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,24 @@
+# Virtual environments
+venv/
+ai_module/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Datasets
+data/
+gate_pyq_dataset/
+
+# Training outputs
+checkpoints/
+runs/
+logs/
+outputs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Tokenized artifacts (reproducible)
+ai_module/tokenized_*.pt

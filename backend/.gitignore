@@ -1,0 +1,4 @@
+node_modules/
+uploads/
+data/*.json
+firebase-service-account.json

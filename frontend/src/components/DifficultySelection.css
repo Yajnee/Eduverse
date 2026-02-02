@@ -1,0 +1,94 @@
+/* ============================================================================
+   EduVerse — DifficultySelection UI (vAURA-PRO R5)
+   White Cards • Purple Glow • Consistent Exam Theme
+   ========================================================================== */
+
+/* Main container */
+.difficulty-container {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Header */
+.difficulty-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+}
+
+/* Subtitle */
+.difficulty-container .topic-line {
+  font-size: 1rem;
+  color: #e4e4e4;
+  margin-bottom: 1.5rem;
+}
+
+.topic-highlight {
+  color: #d4ccff;
+  font-weight: 600;
+}
+
+/* Difficulty grid */
+.difficulty-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 22px;
+}
+
+/* Difficulty card */
+.difficulty-card {
+  width: 100%;
+  padding: 20px;
+
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 16px;
+  border: 1px solid #e8e8ff;
+  backdrop-filter: blur(4px);
+
+  color: #222;
+  text-align: left;
+  cursor: pointer;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: 0.22s ease;
+}
+
+/* Hover — Purple elevation */
+.difficulty-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+  border-color: #b7a3ff;
+  background: #ffffff;
+}
+
+/* Pressed */
+.difficulty-card:active {
+  transform: scale(0.98);
+}
+
+/* Difficulty title */
+.difficulty-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4d43d0;
+}
+
+/* Description lines */
+.difficulty-card p {
+  margin: 0 0 4px 0;
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .difficulty-card {
+    text-align: center;
+  }
+}

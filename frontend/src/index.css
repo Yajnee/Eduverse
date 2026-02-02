@@ -1,0 +1,246 @@
+/* ============================================================
+   EduVerse Global Theme — vAURA-UI THEME
+   Purple Gradient + White Card + Shadows
+   ============================================================ */
+
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+  background: linear-gradient(135deg, #705ad0, #9e6df7);
+  min-height: 100vh;
+  color: #111;
+}
+
+/* CENTERING UTIL */
+.center-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+/* WHITE CARD */
+.card {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(3px);
+  border-radius: 18px;
+  padding: 32px;
+  width: 480px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease;
+}
+
+/* HEADING */
+.card h2, .card h3, .card h1 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* LABEL */
+.card label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+/* INPUT FIELDS */
+.card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+/* GRADIENT BUTTON */
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: linear-gradient(90deg, #5861d6, #9a63f7);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* SMALL LINK */
+.small-link {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* FADE IN ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   QUIZ PAGE THEME — Matching Login/Register
+   ============================================================ */
+
+.quiz-wrapper {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  height: calc(100vh - 80px);
+}
+
+.quiz-left, .quiz-right {
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+  overflow-y: auto;
+}
+
+.quiz-header h2 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.q-count {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.question-box {
+  background: #f8f8ff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* OPTION BUTTONS */
+.option-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #d0d0ff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  gap: 12px;
+  transition: 0.15s ease;
+}
+
+.option-btn:hover {
+  background: #eef0ff;
+}
+
+.option-btn.active {
+  background: #dbe3ff;
+  border-color: #8b9bfd;
+}
+
+.opt-key {
+  font-weight: 700;
+  color: #4a4cd1;
+}
+
+/* NAT INPUT FIELD */
+.nat-input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #a5a5d6;
+  margin-bottom: 20px;
+}
+
+/* NAVIGATION BAR */
+.nav-bar {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-btn, .flag-btn, .submit-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-btn {
+  background: #e8e8ff;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+}
+
+.flag-btn {
+  background: #ffe6c2;
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, #5861d6, #9a63f7);
+  color: white;
+}
+
+/* PALETTE */
+.palette-title {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.palette-item {
+  background: #e5e7ff;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.15s ease;
+}
+
+.palette-item:hover {
+  background: #d2d6ff;
+}
+
+.palette-item.current {
+  border: 2px solid #7745ff;
+}
+
+.palette-item.answered {
+  background: #9af7c5;
+}
+
+.palette-item.flagged {
+  background: #ffcf99;
+}
